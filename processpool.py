@@ -6,3 +6,5 @@ result = []
 
 for num in num_list:
     result.append(cal_square(num))
+
+print(result)
