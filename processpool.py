@@ -1,4 +1,5 @@
 import os
+from multiprocessing import Pool
 
 # def cal_square(n):
 #     return n * n
@@ -16,4 +17,3 @@ for num in num_list:
 print(result)
 
 print(os.cpu_count())
-
