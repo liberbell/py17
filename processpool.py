@@ -27,3 +27,4 @@ result = []
 p = Pool(processes=2)
 result = p.map(cal_square, num_list)
 p.close()
+print(result)
