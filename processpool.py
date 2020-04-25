@@ -35,3 +35,6 @@ def sum_square(number):
     for i in range(number):
         s += i * i
     return s
+
+def sum_square_with_map(numbers):
+    start_time = time.time()
