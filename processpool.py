@@ -17,3 +17,7 @@ for num in num_list:
 print(result)
 
 print(os.cpu_count())
+
+p = Pool()
+result = p.map(cal_square, num_list)
+p.close()
