@@ -1,6 +1,10 @@
 import os
 
+# def cal_square(n):
+#     return n * n
+
 def cal_square(n):
+    print(n, os.getpid())
     return n * n
 
 num_list = [1, 2, 3, 4, 5]
@@ -12,3 +16,4 @@ for num in num_list:
 print(result)
 
 print(os.cpu_count())
+
