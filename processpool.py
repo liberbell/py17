@@ -38,3 +38,5 @@ def sum_square(number):
 
 def sum_square_with_map(numbers):
     start_time = time.time()
+    p = Pool()
+    result = p.map(sum_square, numbers)
