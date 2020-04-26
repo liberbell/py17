@@ -45,4 +45,4 @@ def sum_square_with_map(numbers):
     p.join()
 
     total_time = time.time() - start_time
-    print("Processing %d numbers took %.2f seconds using multiprocessing", % (len(numbers), total_time))
+    print("Processing %d numbers took %.2f seconds using multiprocessing" % (len(numbers), total_time))
