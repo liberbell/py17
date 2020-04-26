@@ -56,3 +56,7 @@ def sum_square_without_mp(numbers):
 
     total_time = time.time() - start_time
     print("Processing %d numbers took %.2f seconds using multiprocessing" % (len(numbers), total_time))
+
+numbers = range(1000)
+sum_square_with_mp(numbers)
+sum_square_without_mp(numbers)
