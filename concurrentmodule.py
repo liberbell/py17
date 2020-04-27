@@ -5,3 +5,5 @@ import time
 def return_after_n_secs(n, message):
     time.sleep(n)
     return message
+
+pool = ThreadPoolExecutor(3)
