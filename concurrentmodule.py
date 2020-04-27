@@ -7,7 +7,7 @@ def return_after_n_secs(n, message):
     return message
 
 pool = ThreadPoolExecutor(3)
-submitted_job = pool.submit(return_after_n_secs, 60, "Hello")
+submitted_job = pool.submit(return_after_n_secs, 10, "Hello")
 
 print(submitted_job.done())
 print(submitted_job.result())
