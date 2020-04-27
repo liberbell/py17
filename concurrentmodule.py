@@ -16,3 +16,8 @@ def return_after_n_secs(n, message):
 num_list = [2, 3, 4, 5, 6]
 def cal_square(x):
     return x * x
+
+def executor_func():
+    with ThreadPoolExecutor(max_workers= 3) as executor:
+        results = executor.map(cal_square, num_list)
+    return results
