@@ -24,3 +24,5 @@ def executor_func():
 
 square_data = executor_func()
 print(square_data)
+
+print(list(square_data))
