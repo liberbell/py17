@@ -17,9 +17,14 @@ num_list = [2, 3, 4, 5, 6]
 def cal_square(x):
     return x * x
 
+# def executor_func():
+#     with ThreadPoolExecutor(max_workers= 3) as executor:
+#         results = executor.map(cal_square, num_list)
+#     return results
+
 def executor_func():
     with ThreadPoolExecutor(max_workers= 3) as executor:
-        results = executor.map(cal_square, num_list)
+        results = executor.submit(cal_square, num_list)
     return results
 
 square_data = executor_func()
