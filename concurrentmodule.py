@@ -21,3 +21,6 @@ def executor_func():
     with ThreadPoolExecutor(max_workers= 3) as executor:
         results = executor.map(cal_square, num_list)
     return results
+
+square_data = executor_func()
+print(square_data)
