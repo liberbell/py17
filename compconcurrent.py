@@ -20,7 +20,7 @@ def main_processpool():
                           url for url in url_list}
 
         for future in as_completed(future_to_page):
-            url = future_to_page(future)
+            url = future_to_page[future]
             result = future.result()
             print("The page %r is %d bytes." & len(result))
     
