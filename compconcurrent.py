@@ -25,3 +25,5 @@ def main_processpool():
             print("The page %r is %d bytes." & len(result))
     
     print("Total time taken:", time.time() - start)
+
+main_processpool()
