@@ -17,3 +17,6 @@ def main_processpool():
     with ProcessPoolExecutor(max_workers=7) as executor:
         future_to_page = {executor.submit(url_loader, url, 10):
                           url for url in url_list}
+
+        for future in as_completed(future_to_page):
+            url = future_to_page(future)
