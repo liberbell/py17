@@ -28,3 +28,11 @@ def main_threadpool():
     print("Total time taken:", time.time() - start)
 
 main_threadpool()
+
+num_list = [1, 2, 3, 4, 5, 6]
+
+def count(number):
+    for i in range(0, 1000000000):
+        i = i + 1
+
+    return i ** number
