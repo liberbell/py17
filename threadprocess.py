@@ -46,4 +46,4 @@ start_time = time.time()
 for item in num_list:
     asses_item(item)
 
-print("Sequencial execution in " str(time.time() - start_time), "seconds")
+print("Sequencial execution in " + str(time.time() - start_time), "seconds")
