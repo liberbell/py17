@@ -27,7 +27,7 @@ def main_threadpool():
     
     print("Total time taken:", time.time() - start)
 
-main_threadpool()
+# main_threadpool()
 
 num_list = [1, 2, 3, 4, 5, 6]
 
@@ -36,3 +36,7 @@ def count(number):
         i = i + 1
 
     return i ** number
+
+def assume_item(x):
+    result_item = count(x)
+    print("item " + str(x) + " result " + str(result_item))
