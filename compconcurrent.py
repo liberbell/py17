@@ -42,3 +42,4 @@ def main_threadpool():
     print("Total time taken:", time.time() - start)
 
 main_processpool()
+main_threadpool()
