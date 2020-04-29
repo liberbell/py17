@@ -48,7 +48,13 @@ start_time = time.time()
 
 # print("Sequencial execution in " + str(time.time() - start_time), "seconds")
 
-with ThreadPoolExecutor(max_workers=4) as executor:
+# with ThreadPoolExecutor(max_workers=4) as executor:
+#     for item in num_list:
+#         executor.submit(asses_item, item)
+
+# print("Sequencial execution in " + str(time.time() - start_time), "seconds")
+
+with ProcessPoolExecutor(max_workers=4) as executor:
     for item in num_list:
         executor.submit(asses_item, item)
 
