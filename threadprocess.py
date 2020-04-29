@@ -37,6 +37,13 @@ def count(number):
 
     return i ** number
 
-def assume_item(x):
+def asses_item(x):
     result_item = count(x)
     print("item " + str(x) + " result " + str(result_item))
+
+start_time = time.time()
+
+for item in num_list:
+    asses_item(item)
+
+print("Sequencial execution in " str(time.time() - start_time), "seconds")
