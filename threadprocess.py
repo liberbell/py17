@@ -32,7 +32,7 @@ def main_threadpool():
 num_list = [1, 2, 3, 4, 5, 6]
 
 def count(number):
-    for i in range(0, 1000000000):
+    for i in range(0, 10000000):
         i = i + 1
 
     return i ** number
