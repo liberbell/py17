@@ -1,7 +1,7 @@
-def main():
-    print("Hello")
+# def main():
+#     print("Hello")
 
-main()
+# main()
 
 async def main():
     print("Hello")
