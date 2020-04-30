@@ -1,3 +1,5 @@
+import asyncio
+
 # def main():
 #     print("Hello")
 
@@ -6,5 +8,8 @@
 async def main():
     print("Hello")
 
-func = main()
-print(func)
+# func = main()
+# print(type(func))
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
