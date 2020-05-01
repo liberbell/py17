@@ -10,3 +10,10 @@ async def print_numbers(num):
     for i in range(num):
         print(i)
         await asyncio.sleep(1)
+
+async def main():
+    start_time = time.time()
+
+    await asyncio.gather(greetings("Hello"),
+                         greetings("World",
+                         print_numbers(6)))
