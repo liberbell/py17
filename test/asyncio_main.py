@@ -8,3 +8,10 @@ async def greetings(message):
 
 async def main():
     start_time = time.time()
+
+    await greetings("Hello")
+    await greetings("World")
+
+    end_time = time.time()
+
+    print("Control returned to main")
