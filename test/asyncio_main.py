@@ -9,8 +9,14 @@ async def greetings(message):
 async def main():
     start_time = time.time()
 
-    await greetings("Hello")
-    await greetings("World")
+    # await greetings("Hello")
+    # await greetings("World")
+
+    task1 = asyncio.create_task(greetings("Hello"))
+    task2 = asyncio.create_task(greetings("World"))
+
+    await task1
+    await task2
 
     end_time = time.time()
 
