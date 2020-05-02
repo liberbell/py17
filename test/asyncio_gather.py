@@ -22,3 +22,5 @@ async def main():
     end_time = time.time()
     print("Control returned to main")
     print("Total time: ", end_time - start_time)
+
+asyncio.run(main())
