@@ -15,8 +15,8 @@ async def main():
     start_time = time.time()
 
     await asyncio.gather(greetings("Hello"),
-                         greetings("World",
-                         print_numbers(6)))
+                         greetings("World"),
+                         print_numbers(6))
 
 
     end_time = time.time()
